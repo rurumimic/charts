@@ -25,6 +25,7 @@ git push origin gh-pages
 
 ```bash
 helm repo add rurumimic https://rurumimic.github.io/charts
+helm repo update
 helm search repo rurumimic
 helm install my-app rurumimic/<chart-name> --version 0.0.1
 ```
