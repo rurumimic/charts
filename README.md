@@ -29,3 +29,18 @@ helm repo update
 helm search repo rurumimic
 helm install my-app rurumimic/<chart-name> --version 0.0.1
 ```
+
+### $HOME/.cr/cr.yaml
+
+```yaml
+token: xxxx
+owner: rurumimic
+git-repo: charts
+charts-repo: https://rurumimic.github.io/charts
+index-path: /path/to/index.yaml
+```
+
+```bash
+cr upload
+cr index
+```
